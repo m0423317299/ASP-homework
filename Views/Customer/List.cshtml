@@ -1,0 +1,39 @@
+﻿@model IEnumerable<bloodpressure>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>血壓資料一覽表</h2>
+
+<a href="~/Customer/New">新增資料</a>
+<table border="1"  class="table table-striped">
+    <tr>
+        <td>序號</td>
+        <td>編號</td>
+        <td>收縮壓</td>
+        <td>舒張壓</td>
+        <td>年齡</td>
+        <td>測量時間</td>
+        <td>修改</td>
+        <td>刪除</td>
+    </tr>
+    @{ 
+        int count = 0;
+        foreach (bloodpressure t in Model)
+        {
+            count++;
+    <tr>
+        <td>@count</td>
+        <td>@t.f_ID.ToString()</td>
+        <td>@t.f_SBP.ToString()</td>
+        <td>@t.f_DBP.ToString()</td>
+        <td>@t.f_Age.ToString()</td>
+        <td>@t.f_time</td>
+        <td>@Html.ActionLink("修改", "Update", "Customer", new { fid = t.f_ID }, null)</td>
+        <td>@Html.ActionLink("刪除", "Delete", "Customer", new { fid = t.f_ID }, new { OnClick = "return confirm('確定要刪除嗎')"})</td>
+    </tr>
+        }
+
+                }
+</table>
+

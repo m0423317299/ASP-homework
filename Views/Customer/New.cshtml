@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>新增測量資料</h2>
+
+<form method="post" action="~/Customer/New">
+
+    <p>
+        收縮壓
+        <br />
+        <input name="f_SBP" type="text" />
+    </p>
+    <p>
+        舒張壓
+        <br />
+        <input name="f_DBP" type="text" />
+    </p>
+    <p>
+        年齡
+        <br />
+        <input name="f_Age" type="text" />
+    </p>
+    <p>
+        時間
+        <br />
+        <input name="f_time" type="text" />
+    </p>
+    <br />
+    <input type="submit" value="送出" />
+</form>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbhw">
+  <DataContextMoniker Name="/dbhwDataContext" />
+  <nestedChildShapes>
+    <classShape Id="11179f5a-386b-4ceb-a223-04fb30d145d4" absoluteBounds="2, 1.5, 2, 1.7220992024739581">
+      <DataClassMoniker Name="/dbhwDataContext/bloodpressure" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a76173d6-07c8-4610-91e5-2c6185f5a59b" absoluteBounds="2.015, 1.96, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

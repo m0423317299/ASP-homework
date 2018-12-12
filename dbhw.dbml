@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbhw" Class="dbhwDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=dbhw;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="dbhwConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.bloodpressure" Member="bloodpressure">
+    <Type Name="bloodpressure">
+      <Column Name="f_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="f_SBP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="f_DBP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="f_Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="f_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

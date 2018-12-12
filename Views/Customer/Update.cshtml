@@ -1,0 +1,12 @@
+﻿@model ASP_homework.bloodpressure
+
+@{
+    ViewBag.Title = "Update";
+}
+<form method="post" action="~/Customer/Update">
+    <h2>修改資料</h2>
+    @Html.EditorForModel()
+    <input type="submit" value="送出" />
+</form>
+
+
